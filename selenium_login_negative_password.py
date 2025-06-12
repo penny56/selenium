@@ -15,6 +15,7 @@ class LoginPage:
         self.driver = driver
 
         # tuple 输入法，在 EC.visibility_of_element_located() 中使用
+        # 注意这个方法的参数是一个tuple，不像 find_element() 方法是2个参数。
         self.username_input = (By.ID, 'username')
         self.password_input = (By.ID, 'password')
         self.login_button = (By.ID, 'submit')
